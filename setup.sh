@@ -30,6 +30,7 @@ brews=(
     macvim
     youtube-dl
     caskroom/cask/brew-cask
+    ssh-copy-id
 )
 brew install ${brews[@]}
 brew linkapps
@@ -41,20 +42,35 @@ sudo mv /usr/bin/vim /usr/bin/vim73
 loudEcho "Brew cask..."
 apps=(
     adium
+    atom
+    anvil
     alfred
     appcleaner
+    brackets
+    BetterTouchTool
     cloudup
+    charles
+    clipmenu
+    caffeine
+    dropbox
+    evernote
     firefox
+    flux
     google-chrome
-    google-drive
+    gitup
     iterm2
     itsycal
+    imageoptim
+    lastpass
+    macdown
+    handbrake
     mattr-slate
     qlcolorcode
     qlmarkdown
     qlstephen
     quicklook-json
     skype
+    sublime-text
     sourcetree
     transmission
     tunnelblick
@@ -86,16 +102,15 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 loudEcho "Installing zsh-autosuggestions..."
 git clone git://github.com/tarruda/zsh-autosuggestions ~/.zsh-autosuggestions --quiet
 
-# loudEcho "Setup goschevski zsh theme..."
-mkdir ~/.oh-my-zsh/custom/themes/
-ln -s ~/dotfiles/goschevski.zsh-theme ~/.oh-my-zsh/custom/themes/goschevski.zsh-theme
-
 loudEcho "Setup homefiles..."
 for file in $(ls ~/dotfiles/homefiles/)
 do
     rm -rf ~/.$file
     ln -s ~/dotfiles/homefiles/$file ~/.$file
 done
+
+# Install Sublime Text settings
+cp -r homefiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
 
 loudEcho "Cloning vundle..."
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim --quiet
