@@ -47,7 +47,6 @@ apps=(
     alfred
     appcleaner
     brackets
-    BetterTouchTool
     cloudup
     charles
     clipmenu
