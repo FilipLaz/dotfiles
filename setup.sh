@@ -27,7 +27,6 @@ brews=(
     ack
     wget
     node
-    macvim
     youtube-dl
     caskroom/cask/brew-cask
     ssh-copy-id
@@ -46,7 +45,6 @@ apps=(
     anvil
     alfred
     appcleaner
-    brackets
     cloudup
     charles
     clipmenu
@@ -55,7 +53,6 @@ apps=(
     evernote
     firefox
     flux
-    google-chrome
     gitup
     iterm2
     itsycal
@@ -63,7 +60,7 @@ apps=(
     lastpass
     macdown
     handbrake
-    mattr-slate
+    moom
     qlcolorcode
     qlmarkdown
     qlstephen
@@ -73,10 +70,7 @@ apps=(
     sourcetree
     transmission
     tunnelblick
-    twitterrific
-    virtualbox
     vlc
-    xtrafinder
 )
 brew cask install ${apps[@]}
 
@@ -91,9 +85,6 @@ npmModules=(
 )
 npm i -g ${npmModules[@]}
 
-loudEcho "Download sphp (php version switcher)..."
-curl -L https://raw.githubusercontent.com/conradkleinespel/sphp-osx/master/sphp > /usr/local/bin/sphp
-sudo chmod +x /usr/local/bin/sphp
 
 loudEcho "Installing oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -107,12 +98,3 @@ do
     rm -rf ~/.$file
     ln -s ~/dotfiles/homefiles/$file ~/.$file
 done
-
-# Install Sublime Text settings
-cp -r homefiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
-
-loudEcho "Cloning vundle..."
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim --quiet
-
-loudEcho "Installing Vim plugins..."
-vim +PluginInstall +qall
