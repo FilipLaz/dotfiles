@@ -1,6 +1,9 @@
 ### Remy's Sharp Setup
 [https://remysharp.com/2013/07/25/my-terminal-setup](https://remysharp.com/2013/07/25/my-terminal-setup)
 
+### MY SLATE SETUP
+[SLATE SETUP](http://vninja.net/osx/slate-setup/)
+
 
 ### Installation
 
