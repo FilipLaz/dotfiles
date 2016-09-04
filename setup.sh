@@ -54,10 +54,11 @@ apps=(
     firefox
     flux
     gitup
-    iterm2
+    iterm2-beta
     itsycal
     imageoptim
     lastpass
+    mattr-slate
     macdown
     handbrake
     moom
@@ -71,14 +72,16 @@ apps=(
     transmission
     tunnelblick
     vlc
+    visual-studio-code
+    karabiner
+    seil
 )
 brew cask install ${apps[@]}
 
 loudEcho "NPM install global modules..."
 npmModules=(
     gulp
-    jscs
-    jshint
+    eslint
     n
     bower
     nodemon
