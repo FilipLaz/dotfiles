@@ -40,28 +40,24 @@ sudo mv /usr/bin/vim /usr/bin/vim73
 
 loudEcho "Brew cask..."
 apps=(
-    adium
-    atom
     anvil
     alfred
     appcleaner
     cloudup
     charles
-    clipmenu
     caffeine
     dropbox
     evernote
     firefox
     flux
     gitup
-    iterm2-beta
+    iterm2
     itsycal
     imageoptim
     lastpass
     mattr-slate
     macdown
     handbrake
-    moom
     qlcolorcode
     qlmarkdown
     qlstephen
