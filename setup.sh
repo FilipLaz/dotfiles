@@ -71,6 +71,7 @@ apps=(
     visual-studio-code
     karabiner
     seil
+    ffmpeg
 )
 brew cask install ${apps[@]}
 
