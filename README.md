@@ -8,7 +8,7 @@
 [http://nateeagle.com/](http://nateeagle.com/2013/03/08/open-new-tabs-in-iterm-in-the-current-directory/)
 
 ### Set iterm2 to delete word
-[Protip: Delete Words on iTerm2]http://felipecsl.com/blog/2012/06/05/protip-delete-words-on-iterm2-mac-osx/
+[Protip: Delete Words on iTerm2](http://felipecsl.com/blog/2012/06/05/protip-delete-words-on-iterm2-mac-osx/)
 
 ### Sublime setup
 #### Packages
