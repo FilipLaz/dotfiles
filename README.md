@@ -20,7 +20,8 @@
 * SideBarEnhancements
 * SublimeLinter
 * GitGutter
-#### Linter
+
+### Linter
 * SublimeLinter
 * SublimeLinter-jscs
 * syncedsidebar
