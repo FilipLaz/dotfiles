@@ -72,6 +72,7 @@ apps=(
     karabiner
     seil
     ffmpeg
+    cakebrew
 )
 brew cask install ${apps[@]}
 
