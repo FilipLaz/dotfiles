@@ -41,6 +41,9 @@ alias localip="ipconfig getifaddr en0"
 # Brew cask
 alias cask="brew cask"
 
+# Visual studio 
+alias vs="code ."
+
 # Brew and cask cleanup & Flush Directory Service cache & Empty the Trash on all mounted volumes and main HDD & Clear Apple’s System Logs
 alias cleanup="brew cleanup; brew cask cleanup; dscacheutil -flushcache; killall -HUP mDNSResponder; rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
