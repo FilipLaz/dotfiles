@@ -22,6 +22,9 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
+# Weather
+alias we='curl http://wttr.in/\?m'
+
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
@@ -43,6 +46,9 @@ alias cleanup="brew cleanup; brew cask cleanup; dscacheutil -flushcache; killall
 
 # Clean install of node modules
 alias npmi="rm -rf node_modules; npm cache clean; npm i"
+
+# Show only marked messages in console
+alias mylog="nodemon server.js | grep --line-buffered 'MYLOG'"
 
 function retag () {
     git tag -d $1 && git push origin :refs/tags/$1 && git tag $1
