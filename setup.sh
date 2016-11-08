@@ -30,6 +30,7 @@ brews=(
     youtube-dl
     caskroom/cask/brew-cask
     ssh-copy-id
+    tmux
 )
 brew install ${brews[@]}
 brew linkapps
@@ -44,6 +45,7 @@ apps=(
     alfred
     appcleaner
     cloudup
+    google-chrome
     charles
     caffeine
     dropbox
