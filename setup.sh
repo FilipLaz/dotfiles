@@ -75,6 +75,7 @@ apps=(
     seil
     ffmpeg
     cakebrew
+    istat-menus
 )
 brew cask install ${apps[@]}
 
