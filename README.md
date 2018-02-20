@@ -10,22 +10,6 @@
 ### Set iterm2 to delete word
 [Protip: Delete Words on iTerm2](http://felipecsl.com/blog/2012/06/05/protip-delete-words-on-iterm2-mac-osx/)
 
-### Sublime setup
-#### Packages
-* AutoFileName
-* BracketHighlighter
-* ConsoleWrap
-* DocBlockr
-* jQuery
-* SideBarEnhancements
-* SublimeLinter
-* GitGutter
-
-### Linter
-* SublimeLinter
-* SublimeLinter-jscs
-* syncedsidebar
-
 ### Installation
 Install Xcode, update system, clone in ~/ directory and run:
 
