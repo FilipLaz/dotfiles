@@ -31,7 +31,6 @@ brews=(
     tmux
 )
 brew install ${brews[@]}
-brew linkapps
 
 loudEcho "Brew cask..."
 apps=(
