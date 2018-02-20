@@ -29,6 +29,8 @@ brews=(
     caskroom/cask/brew-cask
     ssh-copy-id
     tmux
+    httpie
+    archey
 )
 brew install ${brews[@]}
 
