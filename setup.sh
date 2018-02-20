@@ -5,7 +5,7 @@ function loudEcho () {
 }
 
 loudEcho "Cloning dotfiles..."
-git clone git@github.com:FilipLaz/dotfiles.git ~/dotfiles
+git clone https://github.com/FilipLaz/dotfiles.git ~/dotfiles
 
 loudEcho "Setup some OSX settings..."
 sudo chmod +x ~/dotfiles/osx.sh
