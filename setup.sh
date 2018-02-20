@@ -18,12 +18,10 @@ loudEcho "Brew tap..."
 brew tap caskroom/versions
 brew tap homebrew/dupes
 brew tap homebrew/versions
-brew tap homebrew/homebrew-php
 
 loudEcho "Brew install..."
 brews=(
     git
-    php56
     ack
     wget
     node
@@ -35,10 +33,6 @@ brews=(
 brew install ${brews[@]}
 brew linkapps
 
-loudEcho "Brew install vim..."
-brew install vim --with-lua
-sudo mv /usr/bin/vim /usr/bin/vim73
-
 loudEcho "Brew cask..."
 apps=(
     anvil
@@ -46,33 +40,25 @@ apps=(
     appcleaner
     cloudup
     google-chrome
-    charles
     caffeine
     dropbox
-    evernote
     firefox
-    flux
     gitup
     iterm2
     itsycal
     imageoptim
     lastpass
     mattr-slate
-    macdown
     handbrake
     qlcolorcode
     qlmarkdown
     qlstephen
     quicklook-json
     skype
-    sublime-text
     sourcetree
     transmission
-    tunnelblick
     vlc
     visual-studio-code
-    karabiner
-    seil
     ffmpeg
     cakebrew
     istat-menus
@@ -81,11 +67,7 @@ brew cask install ${apps[@]}
 
 loudEcho "NPM install global modules..."
 npmModules=(
-    gulp
-    eslint
     n
-    bower
-    nodemon
 )
 npm i -g ${npmModules[@]}
 
