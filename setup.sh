@@ -39,11 +39,7 @@ apps=(
     anvil
     alfred
     appcleaner
-    cloudup
-    google-chrome
     caffeine
-    dropbox
-    firefox
     gitup
     iterm2
     itsycal
@@ -55,9 +51,7 @@ apps=(
     qlmarkdown
     qlstephen
     quicklook-json
-    skype
     sourcetree
-    transmission
     vlc
     visual-studio-code
     ffmpeg
