@@ -16,8 +16,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 loudEcho "Brew tap..."
 brew tap homebrew/core
-brew tap homebrew/dupes
-brew tap homebrew/versions
 
 loudEcho "Brew install..."
 brews=(
