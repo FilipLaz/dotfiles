@@ -52,7 +52,6 @@ apps=(
     sourcetree
     vlc
     visual-studio-code
-    ffmpeg
     cakebrew
     istat-menus
 )
