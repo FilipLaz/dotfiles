@@ -61,6 +61,8 @@ brew cask install ${apps[@]}
 loudEcho "NPM install global modules..."
 npmModules=(
     n
+    eslint
+    vtop
 )
 npm i -g ${npmModules[@]}
 
