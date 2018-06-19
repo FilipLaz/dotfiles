@@ -15,7 +15,7 @@ loudEcho "Installing home brew..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 loudEcho "Brew tap..."
-brew tap caskroom/versions
+brew tap homebrew/core
 brew tap homebrew/dupes
 brew tap homebrew/versions
 
