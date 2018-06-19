@@ -37,7 +37,6 @@ apps=(
     anvil
     alfred
     appcleaner
-    caffeine
     gitup
     iterm2
     itsycal
