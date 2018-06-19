@@ -69,7 +69,7 @@ loudEcho "Installing oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 loudEcho "Installing zsh-autosuggestions..."
-git clone git://github.com/tarruda/zsh-autosuggestions ~/.zsh-autosuggestions --quiet
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 loudEcho "Setup homefiles..."
 for file in $(ls ~/dotfiles/homefiles/)
