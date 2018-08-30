@@ -14,6 +14,7 @@ alias downloads="cd ~/Downloads"
 alias desktop="cd ~/Desktop"
 
 # Shortcuts
+alias git=hub
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
