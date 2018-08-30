@@ -29,6 +29,7 @@ brews=(
     tmux
     httpie
     archey
+    hub
 )
 brew install ${brews[@]}
 
