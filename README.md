@@ -16,6 +16,9 @@
 ### Installation
 Install Xcode, update system, clone in ~/ directory and run:
 
+### Edit Iterm2 settings
+preferences > Profiles > Keys > Load Presets > Natural Text Editing
+
 ```
 curl -L https://raw.githubusercontent.com/filiplaz/dotfiles/master/setup.sh | sh
 ```
