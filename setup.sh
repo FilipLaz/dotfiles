@@ -29,6 +29,7 @@ brew install diff-so-fancy
 brew install yt-dlp/taps/yt-dlp
 
 colorEcho "Installing apps using brew cask..."
+brew cask install bettertouchtool
 brew cask install alfred
 brew cask install anvil
 brew cask install appcleaner
