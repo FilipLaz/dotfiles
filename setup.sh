@@ -26,6 +26,7 @@ brew install imgur-screenshot
 brew install tmux
 brew install python3
 brew install diff-so-fancy
+brew install yt-dlp/taps/yt-dlp
 
 colorEcho "Installing apps using brew cask..."
 brew cask install alfred
