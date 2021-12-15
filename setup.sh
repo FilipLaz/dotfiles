@@ -1,78 +1,64 @@
-function loudEcho () {
-    echo "------------------------------------"
-    echo $1
-    echo "------------------------------------"
+# Define colors
+RED="$(tput setaf 1)"
+NORMAL="$(tput sgr0)"
+
+function colorEcho () {
+    printf "${RED} $1${NORMAL}\n"
 }
 
-loudEcho "Cloning dotfiles..."
+colorEcho "Cloning dotfiles..."
 git clone https://github.com/FilipLaz/dotfiles.git ~/dotfiles
+# chmod +x ~/dotfiles/bin/*
 
-loudEcho "Setup some OSX settings..."
-sudo chmod +x ~/dotfiles/osx.sh
-~/dotfiles/osx.sh
-
-loudEcho "Installing home brew..."
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-loudEcho "Brew tap..."
+colorEcho "Installing home brew..."
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap homebrew/core
+brew tap homebrew/cask-fonts
 
-loudEcho "Brew install..."
-brews=(
-    git
-    ack
-    wget
-    node
-    youtube-dl
-    caskroom/cask/brew-cask
-    ssh-copy-id
-    tmux
-    httpie
-    archey
-    hub
-)
-brew install ${brews[@]}
+colorEcho "Brew install..."
+brew install git
+brew install node
+brew install ssh-copy-id
+brew install hub
+brew install wget
+brew install go
+brew install imgur-screenshot
+brew install tmux
+brew install python3
+brew install diff-so-fancy
 
-loudEcho "Brew cask..."
-apps=(
-    anvil
-    alfred
-    appcleaner
-    gitup
-    iterm2
-    itsycal
-    imageoptim
-    lastpass
-    mattr-slate
-    handbrake
-    qlcolorcode
-    qlmarkdown
-    qlstephen
-    quicklook-json
-    sourcetree
-    vlc
-    visual-studio-code
-    cakebrew
-    istat-menus
-)
-brew cask install ${apps[@]}
+colorEcho "Installing apps using brew cask..."
+brew cask install alfred
+brew cask install anvil
+brew cask install appcleaner
+brew cask install itsycal
+brew cask install sourcetree
+brew cask install vlc
+brew cask install visual-studio-code
+brew cask install homebrew/cask-versions/firefox-nightly
+# brew cask install google-chrome
+# brew cask install google-backup-and-sync
+brew cask install iterm2
+brew cask install mattr-slate
+brew cask install qlcolorcode
+brew cask install qlmarkdown
+brew cask install qlstephen
+brew cask install quicklook-json
 
-loudEcho "NPM install global modules..."
-npmModules=(
-    n
-    eslint
-    vtop
-)
-npm i -g ${npmModules[@]}
+colorEcho "Installing node global modules..."
+npm i -g vtop
+npm i -g n
+npm i -g eslint
+sudo mkdir /usr/local/n
+sudo chown -R $(whoami) /usr/local/n
 
-
-loudEcho "Installing oh-my-zsh..."
+colorEcho "Install and setup zsh..."
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-loudEcho "Installing zsh-autosuggestions..."
+colorEcho "Installing zsh-autosuggestions..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
-loudEcho "Setup homefiles..."
+colorEcho "Setup homefiles..."
 for file in $(ls ~/dotfiles/homefiles/)
 do
     rm -rf ~/.$file
