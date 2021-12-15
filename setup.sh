@@ -64,3 +64,6 @@ do
     rm -rf ~/.$file
     ln -s ~/dotfiles/homefiles/$file ~/.$file
 done
+
+sudo chmod +x ~/dotfiles/osx.sh
+~/dotfiles/osx.sh
