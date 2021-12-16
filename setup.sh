@@ -29,24 +29,24 @@ brew install diff-so-fancy
 brew install yt-dlp/taps/yt-dlp
 
 colorEcho "Installing apps using brew cask..."
-brew cask install obsidian
-brew cask install bettertouchtool
-brew cask install alfred
-brew cask install anvil
-brew cask install appcleaner
-brew cask install itsycal
-brew cask install sourcetree
-brew cask install vlc
-brew cask install visual-studio-code
-brew cask install homebrew/cask-versions/firefox-nightly
-# brew cask install google-chrome
-# brew cask install google-backup-and-sync
-brew cask install iterm2
-brew cask install mattr-slate
-brew cask install qlcolorcode
-brew cask install qlmarkdown
-brew cask install qlstephen
-brew cask install quicklook-json
+brew install --cask obsidian
+brew install --cask bettertouchtool
+brew install --cask alfred
+brew install --cask anvil
+brew install --cask appcleaner
+brew install --cask itsycal
+brew install --cask sourcetree
+brew install --cask vlc
+brew install --cask visual-studio-code
+brew install --cask homebrew/cask-versions/firefox-nightly
+brew install --cask iterm2
+brew install --cask mattr-slate
+brew install --cask quicklook-json
+# brew install --cask google-chrome
+# brew install --cask google-backup-and-sync
+# brew install --cask qlcolorcode
+# brew install --cask qlmarkdown
+# brew install --cask qlstephen
 
 colorEcho "Installing node global modules..."
 npm i -g vtop
