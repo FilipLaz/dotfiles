@@ -132,3 +132,9 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Enables text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE
+
+# Show hidden files
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# Prevent left and right swipe through history in Chrome
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
