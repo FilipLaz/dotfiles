@@ -11,7 +11,7 @@ git clone https://github.com/FilipLaz/dotfiles.git ~/dotfiles
 # chmod +x ~/dotfiles/bin/*
 
 colorEcho "Installing home brew..."
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/core
 brew tap homebrew/cask-fonts
 
