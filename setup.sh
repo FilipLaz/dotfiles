@@ -42,6 +42,7 @@ brew install --cask homebrew/cask-versions/firefox-nightly
 brew install --cask iterm2
 brew install --cask mattr-slate
 brew install --cask quicklook-json
+brew install --cask mark-text
 # brew install --cask google-chrome
 # brew install --cask google-backup-and-sync
 # brew install --cask qlcolorcode
