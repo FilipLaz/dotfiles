@@ -38,6 +38,9 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 # Save screenshots in JPG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "jpg"
 
+# save screenshots to a different folder
+defaults write com.apple.screencapture location -string $HOME/Desktop/screenshots
+
 # Finder: disable window and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
