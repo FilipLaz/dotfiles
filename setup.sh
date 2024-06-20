@@ -16,6 +16,7 @@ brew tap homebrew/core
 brew tap homebrew/cask-fonts
 
 colorEcho "Brew install..."
+brew install autojump
 brew install git
 brew install node
 brew install ssh-copy-id
